@@ -4,9 +4,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
+    <div class="container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -17,7 +18,7 @@
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="other.html">О седоне</a>
+            <a class="navigation-link" href="other.html">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link">Гостиницы</a>
@@ -103,17 +104,18 @@
               </li>
             </ul>
           </fieldset>
-
           <button class="button button-blue" type="submit">Применить</button>
           <button class="button button-transparent" type="reset">Сбросить</button>
         </form>
       </header>
+
       <section class="catalog-products">
+        <div class="sorting-container">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <p class="catalog-filter-total">Найдено гостиниц: <span>38</span></p>
 
         <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвое</option>
+          <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
         <a href="#" class="button-icon">
@@ -125,14 +127,15 @@
         <a class="button-icon" href="#">
           <span class="visually-hidden">Показать список</span>
         </a>
+        </d>
         <ul class="product-list">
           <li class="product-hotel">
             <a class="product-hotel-link" href="product.html">
               <img class="product-hotel-image" src="images/hotel-1.jpg" alt="" width="300" height="212">
               <h3 class="product-hotel-title"> Amara Resort & Spa</h3>
             </a>
-            <p class="product-hotel">Гостиница</p>
-            <b class="product-hotel-price">от 4000 ₽</b>
+            <p class="product-hotel-type">Гостиница</p>
+            <a class="product-hotel-price">От 4000 ₽</a>
             <a class="product-hotel-button button button-brown" href="#">Подробнее</a>
             <a class="product-hotel-button button button-blue" href="#">В избранное</a>
             <p class="stars-four"><span class="visually-hidden">Четыре звезды</span></p>
@@ -143,8 +146,8 @@
               <img class="product-hotel-image" src="images/hotel-2.jpg" alt="" width="300" height="212">
               <h3 class="product-hotel-title"> Villas at Poco Diablo</h3>
             </a>
-            <p class="product-hotel">Гостиница</p>
-            <b class="product-hotel-price">от 5000 ₽</b>
+            <p class="product-hotel-type">Гостиница</p>
+            <a class="product-hotel-price">От 5000 ₽</a>
             <a class="product-hotel-button button button-brown" href="#">Подробнее</a>
             <a class="product-hotel-button button button-green" href="#">В избранном</a>
             <p class="stars-four"><span class="visually-hidden">Четыре звезды</span></p>
@@ -155,8 +158,8 @@
               <img class="product-hotel-image" src="images/hotel-3.jpg" alt="" width="300" height="212">
               <h3 class="product-hotel-title"> Desert Quail Inn</h3>
             </a>
-            <p class="product-hotel">Гостиница</p>
-            <b class="product-hotel-price">от 2500 ₽</b>
+            <p class="product-hotel-type">Гостиница</p>
+            <a class="product-hotel-price">От 2500 ₽</a>
             <a class="product-hotel-button button button-brown" href="#">Подробнее</a>
             <a class="product-hotel-button button button-blue" href="#">В избранное</a>
             <p class="stars-three"><span class="visually-hidden">Три звезды</span></p>
@@ -167,8 +170,8 @@
               <img class="product-hotel-image" src="images/hotel-4.jpg" alt="" width="300" height="212">
               <h3 class="product-hotel-title"> GreenTree Inn</h3>
             </a>
-            <p class="product-hotel">Гостиница</p>
-            <b class="product-hotel-price">от 1500 ₽</b>
+            <p class="product-hotel-type">Гостиница</p>
+            <a class="product-hotel-price">От 1500 ₽</a>
             <a class="product-hotel-button button button-brown" href="#">Подробнее</a>
             <a class="product-hotel-button button button-blue" href="#">В избранное</a>
             <p class="stars-two"><span class="visually-hidden">Две звезды</span></p>
@@ -181,19 +184,19 @@
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item button-pagination-blue">
             <a class="pagination-link" href="#">2</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item button-pagination-blue">
             <a class="pagination-link" href="#">3</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item button-pagination-blue">
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
             <span class="pagination-grouping">...</span>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item button-pagination-blue">
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
@@ -238,6 +241,7 @@
           height="32.9">
       </section>
     </footer>
+    </div>
   </body>
 
 </html>
